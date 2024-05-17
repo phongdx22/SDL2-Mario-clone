@@ -27,6 +27,8 @@ public:
 	void CancelJump() { m_jumping = false; }
 	void SetAlive(bool isAlive) { m_alive = isAlive; }
 	bool GetAlive() { return m_alive; }
+	void SetMovingLeft();
+	void SetMovingRight();
 
 protected:
 	SDL_Renderer* m_renderer;

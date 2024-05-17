@@ -16,6 +16,7 @@ SDL_Texture* g_texture = nullptr;
 GameScreenManager* game_screen_manager;
 Uint32 g_old_time;
 int rotateAngle = 0;
+Mix_Music* g_music = nullptr;
 
 //Function prototypes
 bool InitSDL();
@@ -24,6 +25,7 @@ bool Update();
 void Render();
 SDL_Texture* LoadTextureFromFile(string path);
 void FreeTexture();
+void LoadMusic(string filePath);
 
 //Setup SDL
 bool InitSDL()
@@ -35,6 +37,12 @@ bool InitSDL()
 	}
 	else
 	{
+		if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0)
+		{
+			cout << "Mixer could not init. Error: " << Mix_GetError();
+			return false;
+		}
+
 		//setup passed so create window
 		g_window = SDL_CreateWindow("Games Engine Creation",
 			SDL_WINDOWPOS_UNDEFINED,
@@ -90,6 +98,9 @@ void CloseSDL()
 	//destroy the game screen manager
 	delete game_screen_manager;
 	game_screen_manager = nullptr;
+	//clear up music
+	Mix_FreeMusic(g_music);
+	g_music = nullptr;
 }
 
 bool Update()
@@ -184,10 +195,25 @@ void FreeTexture()
 	}
 }
 
+void LoadMusic(string filePath)
+{
+	g_music = Mix_LoadMUS(filePath.c_str());
+	if (g_music == nullptr)
+	{
+		cout << "Failed to load music. Error: " << Mix_GetError() << endl;
+	}
+}
+
 int main(int argc, char* args[])
 {
 	if (InitSDL())
 	{
+		LoadMusic("Music/Mario.mp3");
+		if (Mix_PlayingMusic() == 0)
+		{
+			Mix_PlayMusic(g_music, -1);
+		}
+
 		game_screen_manager = new GameScreenManager(g_renderer, SCREEN_LEVEL1);
 		
 		//set the time

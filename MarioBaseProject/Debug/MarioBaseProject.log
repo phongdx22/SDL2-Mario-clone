@@ -1,46 +1,20 @@
-﻿  GameScreenLevel1.cpp
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\PowBlock.h(14,118): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\PowBlock.h(14,93): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\GameScreenLevel1.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\GameScreenLevel1.cpp(41,20): warning C4018: '<': signed/unsigned mismatch
-  GameScreenManager.cpp
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenManager.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenManager.cpp')
-  
-  Texture2D.cpp
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Texture2D.cpp(69,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Texture2D.cpp(69,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Texture2D.cpp(69,59): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Texture2D.cpp(69,59): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-  MarioBaseProject.vcxproj -> D:\Unity\Repos\Unity 2D\New folder\Debug\MarioBaseProject.exe
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libFLAC-8.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libjpeg-9.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libmodplug-1.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libmpg123-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libogg-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libopus-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libopusfile-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libpng16-16.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libtiff-5.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libvorbis-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libvorbisfile-3.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\libwebp-7.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\SDL2.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\SDL2_image.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\SDL2_mixer.dll
-  D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\DLL\zlib1.dll
+﻿  Source.cpp
+D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\Source.cpp(81): warning C4715: 'InitSDL': not all control paths return a value
+  MarioBaseProject.vcxproj -> D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\Debug\MarioBaseProject.exe
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libFLAC-8.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libjpeg-9.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libmodplug-1.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libmpg123-0.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libogg-0.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libopus-0.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libopusfile-0.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libpng16-16.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libtiff-5.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libvorbis-0.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libvorbisfile-3.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libwebp-7.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2_image.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2_mixer.dll
+  D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\zlib1.dll
   16 File(s) copied

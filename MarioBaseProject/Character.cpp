@@ -52,7 +52,7 @@ void Character::Update(float deltaTime, SDL_Event e)
 
 	if (m_jumping)
 	{
-		m_position.y = m_position.y - m_jump_force;
+		m_position.y = m_position.y - deltaTime * m_jump_force;
 
 		m_jump_force = m_jump_force - deltaTime * JUMP_FORCE_DECREMENT;
 
@@ -85,6 +85,18 @@ Vector2D Character::GetPosition()
 float Character::GetCollisionRadius()
 {
 	return m_collision_radius;
+}
+
+void Character::SetMovingLeft()
+{
+	m_moving_left = true;
+	m_moving_right = false;
+}
+
+void Character::SetMovingRight()
+{
+	m_moving_left = false;
+	m_moving_right = true;
 }
 
 void Character::MoveLeft(float deltaTime)

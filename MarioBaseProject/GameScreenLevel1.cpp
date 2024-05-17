@@ -46,6 +46,7 @@ void GameScreenLevel1::Render()
 	my_characterMario->Render();
 	my_characterLuigi->Render();
 	m_pow_block->Render();
+	m_coin->Render();
 }
 
 void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
@@ -73,6 +74,7 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 	my_characterLuigi->Update(deltaTime, e);
 	UpdateEnemies(deltaTime, e);
 	UpdatePOWBlock();
+	m_coin->Update(deltaTime, e);
 
 	if (Collisions::Instance()->Circle(my_characterMario, my_characterLuigi))
 	{
@@ -82,6 +84,11 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 	if (Collisions::Instance()->Box(my_characterMario->GetCollisionBox(), my_characterLuigi->GetCollisionBox()))
 	{
 		cout << "Box hit!" << endl;
+	}
+
+	if (Collisions::Instance()->Box(my_characterMario->GetCollisionBox(), m_coin->GetCollisionBox()))
+	{
+		m_coin->SetAlive(false);
 	}
 
 	m_koopaTimer -= deltaTime;
@@ -125,6 +132,7 @@ bool GameScreenLevel1::SetUpLevel()
 	my_characterMario = new CharacterMario(m_renderer, "Images/Mario.png", Vector2D(64, 330), m_level_map);
 	my_characterLuigi = new CharacterLuigi(m_renderer, "Images/Luigi.png", Vector2D(264, 330), m_level_map);
 	m_pow_block = new PowBlock(m_renderer, m_level_map);
+	m_coin = new CharacterCoin(m_renderer, "Images/Coin.png", Vector2D(164, 50), m_level_map);
 
 	CreateKoopa(Vector2D(150, 32), FACING_RIGHT, KOOPA_SPEED);
 	CreateKoopa(Vector2D(325, 32), FACING_LEFT, KOOPA_SPEED);
@@ -181,11 +189,14 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
 		{
 			if (m_enemies[i]->GetPosition().y > 300.0f)
 			{
-				/*if ((m_enemies[i]->GetPosition().x < (float)(-m_enemies[i]->GetCollisionBox().width * 0.5f)) ||
-					(m_enemies[i]->GetPosition().x > SCREEN_WIDTH - (float)(m_enemies[i]->GetCollisionBox().width * 0.55f)))
+				if (m_enemies[i]->GetPosition().x < (float)(-m_enemies[i]->GetCollisionBox().width * 0.5f))
 				{
-					if(m_enemies[i])
-				}*/
+					m_enemies[i]->SetMovingRight();
+				}
+				else if (m_enemies[i]->GetPosition().x > SCREEN_WIDTH - (float)(m_enemies[i]->GetCollisionBox().width * 0.55f))
+				{
+					m_enemies[i]->SetMovingLeft();
+				}
 			}
 
 			m_enemies[i]->Update(deltaTime, e);

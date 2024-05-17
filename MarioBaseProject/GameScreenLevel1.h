@@ -9,6 +9,7 @@
 #include "CharacterMario.h"
 #include "CharacterLuigi.h"
 #include "CharacterKoopa.h"
+#include "CharacterCoin.h"
 #include "Collisions.h"
 #include "LevelMap.h"
 #include <vector>
@@ -31,6 +32,7 @@ private:
 	Texture2D* m_background_texture;
 	Character* my_characterMario;
 	Character* my_characterLuigi;
+	CharacterCoin* m_coin;
 	LevelMap* m_level_map;
 	PowBlock* m_pow_block;
 	bool m_screenshake;

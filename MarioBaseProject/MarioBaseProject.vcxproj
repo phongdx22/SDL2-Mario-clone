@@ -88,12 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\SDL\mixer_include;D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\SDL\include;D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\SDL\image_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\mixer_include;D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\include;D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\image_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\SDL2\SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent />
@@ -165,6 +165,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Character.cpp" />
+    <ClCompile Include="CharacterCoin.cpp" />
     <ClCompile Include="CharacterKoopa.cpp" />
     <ClCompile Include="CharacterLuigi.cpp" />
     <ClCompile Include="CharacterMario.cpp" />
@@ -179,6 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h" />
+    <ClInclude Include="CharacterCoin.h" />
     <ClInclude Include="CharacterKoopa.h" />
     <ClInclude Include="CharacterLuigi.h" />
     <ClInclude Include="CharacterMario.h" />
