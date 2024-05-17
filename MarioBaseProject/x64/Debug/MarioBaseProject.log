@@ -1,0 +1,44 @@
+﻿  Character.cpp
+  CharacterKoopa.cpp
+  CharacterLuigi.cpp
+  CharacterMario.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(2,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'Character.cpp')
+  
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(2,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'CharacterKoopa.cpp')
+  
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(2,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'CharacterLuigi.cpp')
+  
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(2,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'CharacterMario.cpp')
+  
+  Collisions.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Character.h(2,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'Collisions.cpp')
+  
+  GameScreen.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\GameScreen.h(5,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'GameScreen.cpp')
+  
+  GameScreenLevel1.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\GameScreen.h(5,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'GameScreenLevel1.cpp')
+  
+  GameScreenManager.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\GameScreen.h(5,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'GameScreenManager.cpp')
+  
+  LevelMap.cpp
+  PowBlock.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\PowBlock.h(2,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'PowBlock.cpp')
+  
+  Source.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Source.cpp(2,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  Texture2D.cpp
+D:\Unity\Repos\Unity 2D\New folder\MarioBaseProject\Texture2D.h(6,10): error C1083: Cannot open include file: 'SDL.h': No such file or directory
+  (compiling source file 'Texture2D.cpp')
+  
+  Generating Code...
