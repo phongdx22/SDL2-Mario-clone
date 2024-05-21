@@ -88,12 +88,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\mixer_include;D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\include;D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\image_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\mixer_include;D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\include;D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL\image_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>D:\Users\phong.dx\Desktop\Semester 2\GEC\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\SDL;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent />
@@ -175,6 +175,7 @@
     <ClCompile Include="GameScreenManager.cpp" />
     <ClCompile Include="LevelMap.cpp" />
     <ClCompile Include="PowBlock.cpp" />
+    <ClCompile Include="SoundEffect.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Texture2D.cpp" />
   </ItemGroup>
@@ -192,6 +193,7 @@
     <ClInclude Include="GameScreenManager.h" />
     <ClInclude Include="LevelMap.h" />
     <ClInclude Include="PowBlock.h" />
+    <ClInclude Include="SoundEffect.h" />
     <ClInclude Include="Texture2D.h" />
   </ItemGroup>
   <ItemGroup>
