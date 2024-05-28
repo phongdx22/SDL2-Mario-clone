@@ -106,6 +106,7 @@ D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(
 D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(37,90): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
 D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(37,108): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
 D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(37,108): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  SoundEffect.cpp
   Source.cpp
   Texture2D.cpp
 D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Texture2D.cpp(69,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
