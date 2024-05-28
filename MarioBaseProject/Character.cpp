@@ -39,6 +39,7 @@ void Character::Update(float deltaTime, SDL_Event e)
 {
 	int centralX_position = (int)(m_position.x + m_texture->GetWidth() * 0.5) / TILE_WIDTH;
 	int foot_position = (int)(m_position.y + m_texture->GetHeight()) / TILE_HEIGHT;
+	int head_position = (int)(m_position.y) / TILE_HEIGHT;
 
 	if (m_moving_left)
 	{
@@ -55,6 +56,11 @@ void Character::Update(float deltaTime, SDL_Event e)
 		m_position.y = m_position.y - deltaTime * m_jump_force;
 
 		m_jump_force = m_jump_force - deltaTime * JUMP_FORCE_DECREMENT;
+
+		if (m_current_level_map->GetTileAt(head_position, centralX_position) == 1)
+		{
+			m_jump_force = 0.0f;
+		}
 
 		if (m_jump_force <= 0.0f)
 		{

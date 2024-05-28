@@ -49,3 +49,10 @@ struct Rect2D
 		this->height = height;
 	}
 };
+
+enum GAMESTATE
+{
+	EXIT_STATE = 0,
+	INTRO_STATE,
+	GAME_STATE
+};

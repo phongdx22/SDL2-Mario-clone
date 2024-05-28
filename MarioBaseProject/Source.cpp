@@ -2,6 +2,7 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_mixer.h>
+#include <SDL_ttf.h>
 #include "constants.h"
 #include "Texture2D.h"
 #include "Commons.h"
@@ -57,6 +58,12 @@ bool InitSDL()
 			cout << "Window was not created. Error: " << SDL_GetError();
 			return false;
 		}
+
+		if (TTF_Init() < 0)
+		{
+			cout << "Error: " << TTF_GetError() << endl;
+			return false;
+		}
 	}
 
 	g_renderer = SDL_CreateRenderer(g_window, -1, SDL_RENDERER_ACCELERATED);
@@ -89,6 +96,7 @@ void CloseSDL()
 	//quit SDL subsystems
 	IMG_Quit();
 	SDL_Quit();
+	TTF_Quit();
 
 	//clear the texture
 	FreeTexture();

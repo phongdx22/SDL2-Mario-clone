@@ -15,3 +15,13 @@ GameScreen::~GameScreen()
 void GameScreen::Render() {}
 
 void GameScreen::Update(float deltaTime, SDL_Event e) {}
+
+void GameScreen::SetGameState(GAMESTATE gameState)
+{
+	m_current_game_state = gameState;
+}
+
+void GameScreen::SetNextGameState(GAMESTATE gameState)
+{
+	m_next_game_state = gameState;
+}

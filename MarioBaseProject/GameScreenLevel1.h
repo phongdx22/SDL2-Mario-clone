@@ -12,6 +12,7 @@
 #include "CharacterCoin.h"
 #include "Collisions.h"
 #include "LevelMap.h"
+#include "TextRenderer.h"
 #include <vector>
 
 class Texture2D;
@@ -41,6 +42,7 @@ private:
 	float m_background_yPos;
 	float m_koopaTimer;
 	vector<CharacterKoopa*> m_enemies;
+	TextRenderer* titleText;
 
 	bool SetUpLevel();
 	void SetLevelMap();

@@ -1,135 +1,19 @@
-﻿  Character.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Character.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Character.cpp')
-  
-  CharacterCoin.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterCoin.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterCoin.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(6,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(7,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(12,51): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(12,51): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(12,71): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(12,71): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(12,89): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(12,89): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(14,63): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(14,63): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(14,81): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterCoin.cpp(14,81): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  CharacterKoopa.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterKoopa.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterKoopa.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(11,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(12,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(34,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(38,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(41,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(41,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(41,61): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(41,61): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(43,66): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(43,66): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(43,85): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\CharacterKoopa.cpp(43,85): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  CharacterLuigi.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterLuigi.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterLuigi.cpp')
-  
-  CharacterMario.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterMario.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'CharacterMario.cpp')
-  
-  Collisions.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Collisions.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'Collisions.cpp')
-  
-  GameScreen.cpp
-  GameScreenLevel1.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.h(14,118): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.h(14,93): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenLevel1.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\GameScreenLevel1.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\GameScreenLevel1.cpp(41,20): warning C4018: '<': signed/unsigned mismatch
-  GameScreenManager.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenManager.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'GameScreenManager.cpp')
-  
-  LevelMap.cpp
-  PowBlock.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.h(14,118): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'PowBlock.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.h(14,93): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  (compiling source file 'PowBlock.cpp')
-  
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(15,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(16,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(33,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(35,43): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(35,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(35,62): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(35,62): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(37,90): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(37,90): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(37,108): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\PowBlock.cpp(37,108): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  SoundEffect.cpp
-  Source.cpp
-  Texture2D.cpp
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Texture2D.cpp(69,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Texture2D.cpp(69,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Texture2D.cpp(69,59): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Texture2D.cpp(69,59): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\Source.cpp(81): warning C4715: 'InitSDL': not all control paths return a value
-  MarioBaseProject.vcxproj -> D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\Debug\MarioBaseProject.exe
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libFLAC-8.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libjpeg-9.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libmodplug-1.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libmpg123-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libogg-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libopus-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libopusfile-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libpng16-16.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libtiff-5.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libvorbis-0.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libvorbisfile-3.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libwebp-7.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2_image.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2_mixer.dll
-  D:\Unity\Repos\Unity 2D\New folder\GEC-Semester-2\MarioBaseProject\SDL2\DLL\zlib1.dll
+﻿  TextRenderer.cpp
+  MarioBaseProject.vcxproj -> D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\Debug\MarioBaseProject.exe
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libFLAC-8.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libjpeg-9.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libmodplug-1.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libmpg123-0.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libogg-0.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libopus-0.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libopusfile-0.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libpng16-16.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libtiff-5.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libvorbis-0.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libvorbisfile-3.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libwebp-7.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2_image.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\SDL2_mixer.dll
+  D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\zlib1.dll
   16 File(s) copied

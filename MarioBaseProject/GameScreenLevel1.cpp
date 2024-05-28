@@ -47,6 +47,7 @@ void GameScreenLevel1::Render()
 	my_characterLuigi->Render();
 	m_pow_block->Render();
 	m_coin->Render();
+	titleText->Render(m_renderer, "MARIO GAME!", SCREEN_WIDTH / 4 - 50, SCREEN_HEIGHT / 4);
 }
 
 void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
@@ -140,6 +141,7 @@ bool GameScreenLevel1::SetUpLevel()
 	m_screenshake = false;
 	m_background_yPos = 0.0f;
 	m_koopaTimer = 5.0f;
+	titleText = new TextRenderer(50);
 
 	return true;
 }
