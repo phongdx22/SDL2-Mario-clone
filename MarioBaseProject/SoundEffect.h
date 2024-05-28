@@ -7,5 +7,8 @@ class SoundEffect
 public:
 	void Play();
 	void Load(std::string path);
+
+private:
+	Mix_Music* m_music;
 };
 
