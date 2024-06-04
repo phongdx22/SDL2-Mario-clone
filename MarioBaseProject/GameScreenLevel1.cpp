@@ -48,6 +48,7 @@ void GameScreenLevel1::Render()
 	m_pow_block->Render();
 	m_coin->Render();
 	titleText->Render(m_renderer, "MARIO GAME!", SCREEN_WIDTH / 4 - 50, SCREEN_HEIGHT / 4);
+	scoreText->Render(m_renderer, 20, SCREEN_WIDTH / 2 - 30, SCREEN_HEIGHT / 4 - 50);
 }
 
 void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
@@ -142,6 +143,10 @@ bool GameScreenLevel1::SetUpLevel()
 	m_background_yPos = 0.0f;
 	m_koopaTimer = 5.0f;
 	titleText = new TextRenderer(50);
+	scoreText = new TextRenderer(40);
+
+	SetGameState(GAME_STATE);
+	SetNextGameState(EXIT_STATE);
 
 	return true;
 }

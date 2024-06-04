@@ -1,4 +1,9 @@
-﻿  TextRenderer.cpp
+﻿  GameScreenManager.cpp
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Source.cpp
+  Generating Code...
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\Source.cpp(88): warning C4715: 'InitSDL': not all control paths return a value
   MarioBaseProject.vcxproj -> D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\Debug\MarioBaseProject.exe
   D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libFLAC-8.dll
   D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libjpeg-9.dll

@@ -134,8 +134,19 @@ bool Update()
 		case SDLK_q:
 			return true;
 			break;
-		case SDLK_0:
-			rotateAngle = rotateAngle + 15;
+		case SDLK_RETURN:
+			if (game_screen_manager->GetNextGameState() == GAME_STATE)
+			{
+				game_screen_manager->ChangeScreen(SCREEN_LEVEL1);
+			}
+			else if (game_screen_manager->GetCurrentGameState() == GAME_STATE)
+			{
+				game_screen_manager->ChangeScreen(SCREEN_INTRO);
+			}
+			else if (game_screen_manager->GetCurrentGameState() == EXIT_STATE)
+			{
+				return true;
+			}
 			break;
 		}
 		break;
@@ -222,7 +233,7 @@ int main(int argc, char* args[])
 			Mix_PlayMusic(g_music, -1);
 		}
 
-		game_screen_manager = new GameScreenManager(g_renderer, SCREEN_LEVEL1);
+		game_screen_manager = new GameScreenManager(g_renderer, SCREEN_INTRO);
 		
 		//set the time
 		g_old_time = SDL_GetTicks();

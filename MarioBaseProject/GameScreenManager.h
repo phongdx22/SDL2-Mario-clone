@@ -17,6 +17,9 @@ public:
 
 	void ChangeScreen(SCREENS new_screen);
 
+	GAMESTATE GetCurrentGameState();
+	GAMESTATE GetNextGameState();
+
 private:
 	SDL_Renderer* m_renderer;
 	GameScreen* m_current_screen;

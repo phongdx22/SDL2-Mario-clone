@@ -43,6 +43,7 @@ private:
 	float m_koopaTimer;
 	vector<CharacterKoopa*> m_enemies;
 	TextRenderer* titleText;
+	TextRenderer* scoreText;
 
 	bool SetUpLevel();
 	void SetLevelMap();
