@@ -1,5 +1,7 @@
 #include "GameScreenLevel1.h"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 #include "Texture2D.h"
 #include "PowBlock.h"
 
@@ -46,13 +48,19 @@ void GameScreenLevel1::Render()
 	my_characterMario->Render();
 	my_characterLuigi->Render();
 	m_pow_block->Render();
-	m_coin->Render();
-	titleText->Render(m_renderer, "MARIO GAME!", SCREEN_WIDTH / 4 - 50, SCREEN_HEIGHT / 4);
-	scoreText->Render(m_renderer, 20, SCREEN_WIDTH / 2 - 30, SCREEN_HEIGHT / 4 - 50);
+
+	for (int i = 0; i < m_coins.size(); i++)
+	{
+		m_coins[i]->Render();
+	}
+
+	scoreText->Render(m_renderer, m_score, SCREEN_WIDTH / 2 - 30, SCREEN_HEIGHT / 4 - 50);
 }
 
 void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 {
+	
+
 	//do the screenshake if required
 	if (m_screenshake)
 	{
@@ -76,28 +84,21 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 	my_characterLuigi->Update(deltaTime, e);
 	UpdateEnemies(deltaTime, e);
 	UpdatePOWBlock();
-	m_coin->Update(deltaTime, e);
-
-	if (Collisions::Instance()->Circle(my_characterMario, my_characterLuigi))
-	{
-		cout << "Circle hit!" << endl;
-	}
-
-	if (Collisions::Instance()->Box(my_characterMario->GetCollisionBox(), my_characterLuigi->GetCollisionBox()))
-	{
-		cout << "Box hit!" << endl;
-	}
-
-	if (Collisions::Instance()->Box(my_characterMario->GetCollisionBox(), m_coin->GetCollisionBox()))
-	{
-		m_coin->SetAlive(false);
-	}
+	UpdateCoins(deltaTime, e);
 
 	m_koopaTimer -= deltaTime;
 	if (m_koopaTimer <= 0.0f)
 	{
 		CreateKoopa(Vector2D(150, 32), FACING_RIGHT, KOOPA_SPEED);
 		m_koopaTimer = 5.0f;
+	}
+
+	m_coinTimer -= deltaTime;
+	if (m_coinTimer <= 0.0f)
+	{
+		double randomNumber = (double)rand() / ((double)RAND_MAX + 1);
+		CreateCoin(Vector2D(SCREEN_WIDTH * randomNumber, 32));
+		m_coinTimer = 7.0f;
 	}
 }
 
@@ -120,6 +121,7 @@ void GameScreenLevel1::UpdatePOWBlock()
 
 bool GameScreenLevel1::SetUpLevel()
 {
+	srand(time(0));
 	//load texture
 	m_background_texture = new Texture2D(m_renderer);
 	if (!m_background_texture->LoadFromFile("Images/BackgroundMB.png"))
@@ -134,16 +136,18 @@ bool GameScreenLevel1::SetUpLevel()
 	my_characterMario = new CharacterMario(m_renderer, "Images/Mario.png", Vector2D(64, 330), m_level_map);
 	my_characterLuigi = new CharacterLuigi(m_renderer, "Images/Luigi.png", Vector2D(264, 330), m_level_map);
 	m_pow_block = new PowBlock(m_renderer, m_level_map);
-	m_coin = new CharacterCoin(m_renderer, "Images/Coin.png", Vector2D(164, 50), m_level_map);
 
 	CreateKoopa(Vector2D(150, 32), FACING_RIGHT, KOOPA_SPEED);
 	CreateKoopa(Vector2D(325, 32), FACING_LEFT, KOOPA_SPEED);
 
+	CreateCoin(Vector2D(180, 32));
+
 	m_screenshake = false;
 	m_background_yPos = 0.0f;
 	m_koopaTimer = 5.0f;
-	titleText = new TextRenderer(50);
+	m_coinTimer = 7.0f;
 	scoreText = new TextRenderer(40);
+	m_score = 0;
 
 	SetGameState(GAME_STATE);
 	SetNextGameState(EXIT_STATE);
@@ -220,6 +224,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
 					if (m_enemies[i]->GetInjured())
 					{
 						m_enemies[i]->SetAlive(false);
+						AddScore(10);
 					}
 					else
 					{
@@ -241,7 +246,40 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
 	}
 }
 
+void GameScreenLevel1::UpdateCoins(float deltaTime, SDL_Event e)
+{
+	if (!m_coins.empty())
+	{
+		int coinIndexToDelete = -1;
+		for (unsigned int i = 0; i < m_coins.size(); i++)
+		{
+			m_coins[i]->Update(deltaTime, e);
+
+			if (Collisions::Instance()->Circle(m_coins[i], my_characterMario))
+			{
+				m_coins[i]->SetAlive(false);
+				AddScore(20);
+			}
+
+			if (!m_coins[i]->GetAlive())
+			{
+				coinIndexToDelete = i;
+			}
+		}
+
+		if (coinIndexToDelete != -1)
+		{
+			m_coins.erase(m_coins.begin() + coinIndexToDelete);
+		}
+	}
+}
+
 void GameScreenLevel1::CreateKoopa(Vector2D position, FACING direction, float speed)
 {
 	m_enemies.push_back(new CharacterKoopa(m_renderer, "Images/Koopa.png", m_level_map, position, direction, speed));
+}
+
+void GameScreenLevel1::CreateCoin(Vector2D position)
+{
+	m_coins.push_back(new CharacterCoin(m_renderer, "Images/Coin.png", position, m_level_map));
 }

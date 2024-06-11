@@ -43,8 +43,8 @@ protected:
 	float m_jump_force;
 	float m_collision_radius;
 
-	virtual void MoveLeft(float deltaTime);
-	virtual void MoveRight(float deltaTime);
+	virtual void MoveLeft(float deltaTime, float characterSpeed);
+	virtual void MoveRight(float deltaTime, float characterSpeed);
 	virtual void AddGravity(float deltaTime);
 	virtual void Jump();
 

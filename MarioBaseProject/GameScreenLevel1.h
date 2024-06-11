@@ -33,7 +33,6 @@ private:
 	Texture2D* m_background_texture;
 	Character* my_characterMario;
 	Character* my_characterLuigi;
-	CharacterCoin* m_coin;
 	LevelMap* m_level_map;
 	PowBlock* m_pow_block;
 	bool m_screenshake;
@@ -41,15 +40,20 @@ private:
 	float m_wobble;
 	float m_background_yPos;
 	float m_koopaTimer;
+	float m_coinTimer;
+	int m_score;
 	vector<CharacterKoopa*> m_enemies;
-	TextRenderer* titleText;
+	vector<CharacterCoin*> m_coins;
 	TextRenderer* scoreText;
 
 	bool SetUpLevel();
 	void SetLevelMap();
 	void DoScreenShake();
 	void UpdateEnemies(float deltaTime, SDL_Event e);
+	void UpdateCoins(float deltaTime, SDL_Event e);
 	void CreateKoopa(Vector2D position, FACING direction, float speed);
+	void CreateCoin(Vector2D position);
+	void AddScore(int score) { m_score += score; }
 };
 
 #endif // _GAMESCREENLEVEL1_H_

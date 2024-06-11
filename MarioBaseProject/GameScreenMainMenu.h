@@ -2,6 +2,7 @@
 #include "GameScreen.h"
 #include "Commons.h"
 #include "constants.h"
+#include "CharacterMario.h"
 
 class GameScreenMainMenu : GameScreen
 {
@@ -17,6 +18,9 @@ private:
 	int position2y;
 	TextRenderer* startText;
 	TextRenderer* quitText;
+	TextRenderer* titleText;
+	Character* my_characterMario;
+	LevelMap* m_level_map;
 
 	bool SetUpLevel();
 };

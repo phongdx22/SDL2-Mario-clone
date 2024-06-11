@@ -41,16 +41,6 @@ void Character::Update(float deltaTime, SDL_Event e)
 	int foot_position = (int)(m_position.y + m_texture->GetHeight()) / TILE_HEIGHT;
 	int head_position = (int)(m_position.y) / TILE_HEIGHT;
 
-	if (m_moving_left)
-	{
-		MoveLeft(deltaTime);
-	}
-	else if (m_moving_right)
-	{
-		MoveRight(deltaTime);
-	}
-
-
 	if (m_jumping)
 	{
 		m_position.y = m_position.y - deltaTime * m_jump_force;
@@ -105,17 +95,17 @@ void Character::SetMovingRight()
 	m_moving_right = true;
 }
 
-void Character::MoveLeft(float deltaTime)
+void Character::MoveLeft(float deltaTime, float characterSpeed)
 {
 	m_facing_direction = FACING_LEFT;
-	m_position.x = m_position.x - deltaTime * MOVESPEED;
+	m_position.x = m_position.x - deltaTime * characterSpeed;
 	
 }
 
-void Character::MoveRight(float deltaTime)
+void Character::MoveRight(float deltaTime, float characterSpeed)
 {
 	m_facing_direction = FACING_RIGHT;
-	m_position.x = m_position.x + deltaTime * MOVESPEED;
+	m_position.x = m_position.x + deltaTime * characterSpeed;
 }
 
 void Character::AddGravity(float deltaTime)

@@ -9,7 +9,7 @@ CharacterCoin::CharacterCoin(SDL_Renderer* renderer, string imagePath, Vector2D 
 
 void CharacterCoin::Render()
 {
-	SDL_Rect portion_of_sprite = { m_single_sprite_w * m_current_frame,0,m_single_sprite_w,m_single_sprite_h };
+	SDL_Rect portion_of_sprite = { m_single_sprite_w * m_current_frame, 0 , m_single_sprite_w , m_single_sprite_h };
 
 	SDL_Rect desRect = { (int)(m_position.x),(int)(m_position.y),m_single_sprite_w,m_single_sprite_h };
 

@@ -10,6 +10,7 @@ public:
 	void Render() override;
 	void Update(float deltaTime, SDL_Event e) override;
 	bool GetInjured() { return m_injured; }
+	void SetMovementSpeed(float speed);
 
 private:
 	float m_single_sprite_w;

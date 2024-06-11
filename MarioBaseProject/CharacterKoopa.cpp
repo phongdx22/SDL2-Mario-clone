@@ -54,6 +54,14 @@ void CharacterKoopa::Render()
 
 void CharacterKoopa::Update(float deltaTime, SDL_Event e)
 {
+	if (m_moving_left)
+	{
+		MoveLeft(deltaTime, KOOPA_SPEED);
+	}
+	else if (m_moving_right)
+	{
+		MoveRight(deltaTime, KOOPA_SPEED);
+	}
 	Character::Update(deltaTime, e);
 
 	if (!m_injured)
@@ -81,6 +89,11 @@ void CharacterKoopa::Update(float deltaTime, SDL_Event e)
 			FlipRightwayUp();
 		}
 	}
+}
+
+void CharacterKoopa::SetMovementSpeed(float speed)
+{
+	m_movement_speed = speed;
 }
 
 void CharacterKoopa::FlipRightwayUp()

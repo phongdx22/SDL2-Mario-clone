@@ -39,6 +39,15 @@ void CharacterLuigi::Update(float deltaTime, SDL_Event e)
 		break;
 	}
 
+	if (m_moving_left)
+	{
+		MoveLeft(deltaTime, MOVESPEED);
+	}
+	else if (m_moving_right)
+	{
+		MoveRight(deltaTime, MOVESPEED);
+	}
+
 	Character::Update(deltaTime, e);
 }
 
