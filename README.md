@@ -1,2 +1,2 @@
-# GEC Semester 2
+# SDL2 Mario clone
  
