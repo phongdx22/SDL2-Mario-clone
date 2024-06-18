@@ -135,17 +135,21 @@ bool Update()
 			return true;
 			break;
 		case SDLK_RETURN:
-			if (game_screen_manager->GetNextGameState() == GAME_STATE)
+			if (game_screen_manager->GetNextGameState() == GAME_STATE_1)
 			{
 				game_screen_manager->ChangeScreen(SCREEN_LEVEL1);
 			}
-			else if (game_screen_manager->GetCurrentGameState() == GAME_STATE)
+			else if (game_screen_manager->GetNextGameState() == GAME_STATE_2)
 			{
-				game_screen_manager->ChangeScreen(SCREEN_INTRO);
+				game_screen_manager->ChangeScreen(SCREEN_LEVEL2);
 			}
 			else if (game_screen_manager->GetCurrentGameState() == EXIT_STATE)
 			{
 				return true;
+			}
+			else
+			{
+				game_screen_manager->ChangeScreen(SCREEN_INTRO);
 			}
 			break;
 		}

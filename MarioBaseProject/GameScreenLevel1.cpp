@@ -149,8 +149,8 @@ bool GameScreenLevel1::SetUpLevel()
 	scoreText = new TextRenderer(40);
 	m_score = 0;
 
-	SetGameState(GAME_STATE);
-	SetNextGameState(EXIT_STATE);
+	SetGameState(GAME_STATE_1);
+	SetNextGameState(GAME_STATE_2);
 
 	return true;
 }
@@ -259,6 +259,7 @@ void GameScreenLevel1::UpdateCoins(float deltaTime, SDL_Event e)
 			{
 				m_coins[i]->SetAlive(false);
 				AddScore(20);
+
 			}
 
 			if (!m_coins[i]->GetAlive())

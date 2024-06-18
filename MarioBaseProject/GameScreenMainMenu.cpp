@@ -49,7 +49,7 @@ void GameScreenMainMenu::Update(float deltaTime, SDL_Event e)
 		case SDLK_UP:
 			position1y = 160;
 			my_characterMario->SetPosition(Vector2D(160, SCREEN_HEIGHT / 4));
-			SetNextGameState(GAME_STATE);
+			SetNextGameState(GAME_STATE_1);
 			break;
 		}
 	}
@@ -67,7 +67,7 @@ bool GameScreenMainMenu::SetUpLevel()
 	my_characterMario = new CharacterMario(m_renderer, "Images/Mario.png", Vector2D(160, position1y), m_level_map);
 
 	SetGameState(INTRO_STATE);
-	SetNextGameState(GAME_STATE);
+	SetNextGameState(GAME_STATE_1);
 
 	return true;
 }

@@ -1,12 +1,16 @@
-﻿  GameScreenLevel1.cpp
+﻿  GameScreenLevel2.cpp
 D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\PowBlock.h(14,93): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel1.cpp(31,20): warning C4018: '<': signed/unsigned mismatch
-D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel1.cpp(43,20): warning C4018: '<': signed/unsigned mismatch
-D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel1.cpp(52,20): warning C4018: '<': signed/unsigned mismatch
-D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel1.cpp(100,36): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel1.cpp(124,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel2.cpp(41,20): warning C4018: '<': signed/unsigned mismatch
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel2.cpp(95,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel2.cpp(234,18): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel2.cpp(235,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\GameScreenLevel2.cpp(236,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  GameScreenManager.cpp
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\Character.h(24,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\Character.h(24,64): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   MarioBaseProject.vcxproj -> D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\Debug\MarioBaseProject.exe
   D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libFLAC-8.dll
   D:\Users\phong.dx\Documents\GitHub\GEC-Semester-2\MarioBaseProject\SDL2\DLL\libjpeg-9.dll

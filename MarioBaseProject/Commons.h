@@ -54,5 +54,13 @@ enum GAMESTATE
 {
 	EXIT_STATE = 0,
 	INTRO_STATE,
-	GAME_STATE
+	GAME_STATE_1,
+	GAME_STATE_2
+};
+
+enum class Player
+{
+	NONE,
+	PLAYER_1,
+	PLAYER_2
 };

@@ -15,3 +15,5 @@
 #define INITIAL_JUMP_FORCE_SMALL 2.0f
 #define KOOPA_SPEED 50.0f
 #define ANIMATION_DELAY 0.50f
+#define BOARD_SIZE 3
+#define CELL_SIZE 50
